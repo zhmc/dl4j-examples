@@ -189,7 +189,7 @@ public class BasicCSVClassifier {
         INDArray features = testData.getFeatureMatrix();
         for (int i = 0; i < features.rows() ; i++) {
             INDArray slice = features.slice(i);
-            Map<String,Object> animal = new HashMap();
+            Map<String,Object> animal = new HashMap<>();
 
             //set the attributes
             animal.put("yearsLived", slice.getInt(0));
